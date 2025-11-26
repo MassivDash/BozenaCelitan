@@ -24,6 +24,7 @@ import img6969 from "../assets/IMG_6969.jpg";
   </head>
   <body>
     <Masonry
+      sortByHeight={true}
       breakpointCols={{
         default: 4,
         1100: 3,
@@ -31,14 +32,21 @@ import img6969 from "../assets/IMG_6969.jpg";
         500: 1,
       }}
     >
-      <Image src={p2017} alt="Bozena elitan" />
-      <Image src={pic201808_143815} alt="Bozena elitan" />
-      <Image src={att9} alt="Bozena elitan" />
-      <Image src={img0913} alt="Bozena elitan" />
-      <Image src={k_and_l_88} alt="Bozena elitan" />
-      <Image src={pic201808_134353} alt="Bozena elitan" />
-      <Image src={pic20190420} alt="Bozena elitan" />
-      <Image src={img6969} alt="Bozena elitan" />
+      <Image src={p2017} layout="constrained" alt="Bozena elitan" />
+      <Image src={pic201808_143815} layout="constrained" alt="Bozena elitan" />
+      <Image src={att9} layout="constrained" alt="Bozena elitan" />
+      <Image src={img0913} layout="constrained" alt="Bozena elitan" />
+      <Image src={k_and_l_88} layout="constrained" alt="Bozena elitan" />
+      <Image src={pic201808_134353} layout="constrained" alt="Bozena elitan" />
+      <Image src={pic20190420} layout="constrained" alt="Bozena elitan" />
+      <Image src={img6969} layout="constrained" alt="Bozena elitan" />
     </Masonry>
   </body>
 </html>
+
+<style>
+  img {
+    width: 100%;
+    height: auto;
+  }
+</style>
