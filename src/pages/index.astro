@@ -1,16 +1,44 @@
 ---
-
+import { Image } from "astro:assets";
+import { Masonry } from "astro-masonry";
+import p2017 from "../assets/P_20170514_201130_vHDR_Auto.jpg";
+import pic201808_143815 from "../assets/20180803_143815.jpg";
+import att9 from "../assets/att.9Nulgas59yQKrmSQ0BJtY8yosNVA2bQlaLu64H2eWbc.jpg";
+import img0913 from "../assets/IMG_0913.jpg";
+import k_and_l_88 from "../assets/K&L-88.jpg";
+import pic201808_134353 from "../assets/20180803_134353.jpg";
+import pic20190420 from "../assets/20190420_165228.jpg";
+import img6969 from "../assets/IMG_6969.jpg";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>
+      Bożena Celitan 1966 - 2055, Mama, Babcia, Siostra, Źrodło nieskonczonej
+      inspiracji
+    </title>
+  </head>
+  <body>
+    <Masonry
+      breakpointCols={{
+        default: 4,
+        1100: 3,
+        700: 2,
+        500: 1,
+      }}
+    >
+      <Image src={p2017} alt="Bozena elitan" />
+      <Image src={pic201808_143815} alt="Bozena elitan" />
+      <Image src={att9} alt="Bozena elitan" />
+      <Image src={img0913} alt="Bozena elitan" />
+      <Image src={k_and_l_88} alt="Bozena elitan" />
+      <Image src={pic201808_134353} alt="Bozena elitan" />
+      <Image src={pic20190420} alt="Bozena elitan" />
+      <Image src={img6969} alt="Bozena elitan" />
+    </Masonry>
+  </body>
 </html>
