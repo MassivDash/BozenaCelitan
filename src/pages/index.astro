@@ -4,16 +4,42 @@ import { Masonry } from "astro-masonry";
 import p2017 from "../assets/P_20170514_201130_vHDR_Auto.jpg";
 import pic201808_143815 from "../assets/20180803_143815.jpg";
 import att9 from "../assets/att.9Nulgas59yQKrmSQ0BJtY8yosNVA2bQlaLu64H2eWbc.jpg";
-import img0913 from "../assets/IMG_0913.jpg";
-import k_and_l_88 from "../assets/K&L-88.jpg";
 import pic201808_134353 from "../assets/20180803_134353.jpg";
 import pic20190420 from "../assets/20190420_165228.jpg";
 import img6969 from "../assets/IMG_6969.jpg";
-import dsc2206 from "../assets/DSC_2206_Original.JPG";
-import dsc2815 from "../assets/DSC_2815_Original.JPG";
+import img4868 from "../assets/IMG_4868.jpg";
+import img4869 from "../assets/IMG_4869.jpg";
+import img5057 from "../assets/IMG_5057.jpg";
+import img6829 from "../assets/IMG_6829.jpg";
+import img6858 from "../assets/IMG_6858.jpg";
+import wp000 from "../assets/WhatsApp Image 2025-11-29 at 00.05.00.jpeg";
+import wp001 from "../assets/WhatsApp Image 2025-11-29 at 00.05.01.jpeg";
+import wp002 from "../assets/WhatsApp Image 2025-11-29 at 00.05.14 (3).jpeg";
+import wp003 from "../assets/WhatsApp Image 2025-11-29 at 00.05.14.jpeg";
+import wp004 from "../assets/WhatsApp Image 2025-11-29 at 00.05.15.jpeg";
+import wp005 from "../assets/WhatsApp Image 2025-11-29 at 00.06.51.jpeg";
+const images = [
+  p2017,
+  pic201808_143815,
+  att9,
+  pic201808_134353,
+  pic20190420,
+  img6969,
+  img4868,
+  img4869,
+  img5057,
+  img6829,
+  img6858,
+  wp000,
+  wp001,
+  wp002,
+  wp003,
+  wp004,
+  wp005,
+];
 ---
 
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -34,16 +60,11 @@ import dsc2815 from "../assets/DSC_2815_Original.JPG";
         500: 1,
       }}
     >
-      <Image src={p2017} layout="constrained" alt="Bozena elitan" />
-      <Image src={pic201808_143815} layout="constrained" alt="Bozena elitan" />
-      <Image src={att9} layout="constrained" alt="Bozena elitan" />
-      <Image src={img0913} layout="constrained" alt="Bozena elitan" />
-      <Image src={k_and_l_88} layout="constrained" alt="Bozena elitan" />
-      <Image src={pic201808_134353} layout="constrained" alt="Bozena elitan" />
-      <Image src={pic20190420} layout="constrained" alt="Bozena elitan" />
-      <Image src={dsc2206} layout="constrained" alt="Bozena elitan" />
-      <Image src={dsc2815} layout="constrained" alt="Bozena elitan" />
-      <Image src={img6969} layout="constrained" alt="Bozena elitan" />
+      {
+        images.map((src, i) => (
+          <Image src={src} layout="constrained" alt="Bozena elitan" />
+        ))
+      }
     </Masonry>
   </body>
 </html>
